@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1).
+<script>
+const userInput = parseInt(prompt("Please enter a number between 100 and 200:"));
+
+if (isNaN(userInput) || userInput < 100 || userInput > 200) {
+  console.log("Invalid input. Please enter a number between 100 and 200.");
+} else {
+  const divisibleByFiveArray = [];
+
+  for (let i = 0; i <= userInput; i++) {
+    if (i % 5 === 0) {
+      divisibleByFiveArray.push(i);
+    }
+  }
+
+  console.log("Array of numbers divisible by 5:");
+  console.log(divisibleByFiveArray);
+}
+
+</script> -->
+
+<!-- 2).
+<script>
+const numbersArray = [];
+
+for (let i = 0; i < 10; i++) {
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  numbersArray.push(randomNumber);
+}
+
+console.log("Numbers from the array that are multiples of 3:");
+for (let i = 0; i < numbersArray.length; i++) {
+  if (numbersArray[i] % 3 === 0) {
+    console.log(numbersArray[i]);
+  }
+}
+
+</script> -->
+
+
+<!-- 3).
+<script>
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const primeNumbersArray = [];
+
+for (let i = 0; i <= 100; i++) {
+  if (isPrime(i)) {
+    primeNumbersArray.push(i);
+  }
+}
+
+console.log("Prime numbers from 0 to 100:");
+console.log(primeNumbersArray);
+
+</script> -->
+
+
+<!-- 4).
+<script>
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const numbersArray = [10, 20, 30, 40, 50];
+
+let primeNumberFound = false;
+for (let i = 0; i < numbersArray.length; i++) {
+  if (isPrime(numbersArray[i])) {
+    primeNumberFound = true;
+    break;
+  }
+}
+
+if (primeNumberFound) {
+  console.log("Prime number found in the array.");
+} else {
+  console.log("Prime number could not be found in the array.");
+}
+
+</script> -->
+
+
+<!-- 5).
+<script>
+const randomNumbersArray = [];
+
+for (let i = 0; i < 20; i++) {
+  const randomNumber = Math.floor(Math.random() * 100) + 1;
+  randomNumbersArray.push(randomNumber);
+}
+
+const multiplesOfFiveArray = [];
+
+for (let i = 0; i < randomNumbersArray.length; i++) {
+  if (randomNumbersArray[i] % 5 === 0) {
+    multiplesOfFiveArray.push(randomNumbersArray[i]);
+  }
+}
+
+console.log("Multiples of 5 from the random numbers array:");
+console.log(multiplesOfFiveArray);
+
+</script> -->
+
+
+<!-- 6).
+<script>
+const randomNumbersArray = [];
+
+while (randomNumbersArray.length < 10) {
+  const randomNumber = Math.floor(Math.random() * 21);
+  if (!randomNumbersArray.includes(randomNumber)) {
+    randomNumbersArray.push(randomNumber);
+  }
+}
+
+console.log("Array of unique random numbers:");
+console.log(randomNumbersArray);
+
+</script> -->
+
+</body>
+</html>
